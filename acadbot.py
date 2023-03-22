@@ -381,8 +381,10 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Informe o caminho do arquivo CSV para lançar aulas ou notas!")
         exit()
-    login = "trnunes"
-    senha = "thi@g0rinu"
+    print("Informe o seu Login no Academico: ")
+    login = input()
+    print("Informe sua senha no Academico: ")
+    senha = input()
     arquivo = sys.argv[1]
     base = ""
     base_lines = []

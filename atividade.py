@@ -102,4 +102,8 @@ def go_academico(students_grades, assessment, milestone, diary, login, password)
     browser.close()
     return erros
 
-go_academico(students_grades, assessment, milestone, diary, 'trnunes', "thi@g0rinu")
+print("Informe o seu Login no Academico: ")
+login = input()
+print("Informe sua senha no Academico: ")
+senha = input()
+go_academico(students_grades, assessment, milestone, diary, login, senha)
