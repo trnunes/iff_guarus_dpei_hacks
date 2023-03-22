@@ -1,0 +1,11 @@
+MODELO:,"Certificamos que {nome}, inscrito(a) no CPF {cpf}, participou  {tipo_atividade} ""{atividade}"", em {data_atividade}, no {evento}, ocorrido de {data_inicio} até {data_fim}, pelo INSTITUTO FEDERAL FLUMINENSE CAMPUS CAMPOS GUARUS, com carga horária de {horas} horas.",,,,,,,,
+Participante,CPF (se exigido),"Papel (palestrante, mediador, jurado, etc.)","Tipo (Palestra, Oficina, Minicurso, Concurso, ...)",Nome da Atividade,Data da Atividade,Data de Início do Evento,Data Final do Evento,Carga Horária,Evento
+Jefferson Cavalaro Gouvêa,150.331.447-23,,da APRESENTAÇÃO CULTURAL,Espetáculo Dores em Dó,22/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Katia Regina Dos Santos Araujo ,964.845.357-87,,da APRESENTAÇÃO CULTURAL,Espetáculo Dores em Dó,22/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Moisés Crespo Diogo,149.893.897-35,,da APRESENTAÇÃO CULTURAL,Espetáculo Dores em Dó,22/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Thomas Fontes Saboga Cardoso ,087.040.677-97,,da APRESENTAÇÃO CULTURAL,Espetáculo Dores em Dó,22/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Wilson Dos Santos Souza,009.940.977-19,,da APRESENTAÇÃO CULTURAL,Coral Cidade do Sol,23/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Leonardo Gomes de Paula,095.950.117-70,,da APRESENTAÇÃO CULTURAL,Baião de Câmera,26/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Gabriel Rocha Pimentel,157.898.507-23,,da APRESENTAÇÃO CULTURAL,Baião de Câmera,26/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Leonardo de Andrade Lemos,126.161.627-84,,da APRESENTAÇÃO CULTURAL,Baião de Câmera,26/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"
+Thomas Fontes Saboga Cardoso ,087.040.677-97,,da APRESENTAÇÃO CULTURAL,Baião de Câmera,26/11/2021,22/11/2021,26/11/2021,4,"VIII CONGRESSO DE ENSINO, PESQUISA E EXTENSÃO (CONEPE 2021)"

@@ -1,0 +1,13 @@
+MODELO:,"Certificamos que {nome}, inscrito(a) no CPF {cpf}, participou  como {papel} da {tipo_atividade} ""{atividade}"", em {data_atividade}, na {evento}, ocorrida de {data_inicio} até {data_fim}, pelo INSTITUTO FEDERAL FLUMINENSE CAMPUS CAMPOS GUARUS, com carga horária de {horas} horas.",,,,,,,,
+Nome Completo,CPF (se exigido),"Papel (palestrante, mediador, jurado, etc.)","Tipo (palestra, oficina, Minicurso, Concurso, ...)",Nome da Atividade,Data da Atividade,Data de Início do Evento,Data Final do Evento,Carga Horária,Evento
+VANESSA PIO DOS SANTOS TORRES,,palestrante,palestra,Aspectos da formação em Enfermagem e trajetória profissional,12/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 
+ANDRÉ FERNANDO UEBE MANSUR,,palestrante,oficina,Modelos Formativos para a avaliação discente: Avaliação por pares e Autoavaliação,11/05/2022,09/05/2022,13/05/2022,2,SEMANA DE INTEGRAÇÃO 
+RAYANE ESPERANTE BERRIEL,,palestrante,palestra,Técnicas de organização e planejamento para uma aprendizagem efetiva,10/05/2022,09/05/2022,13/05/2022,3,SEMANA DE INTEGRAÇÃO 
+DAYSE MARIA ALVES DE ANDRADE RIBEIRO,,palestrante,oficina,oficina Khan Academy e Cálculo II,10/05/2022,09/05/2022,13/05/2022,2,SEMANA DE INTEGRAÇÃO 
+MONIQUE FREITAS NETO,,palestrante,oficina,Práticas de Microscopia Óptica,10/05/2022,09/05/2022,13/05/2022,3,SEMANA DE INTEGRAÇÃO 
+VINICIUS DA SILVA MARTINS,,palestrante,oficina,Musicografia Braille,12/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 
+PEDRO HENRIQUE DE AZEVEDO CESÁRIO SILVA,,palestrante,oficina,Conhecendo os Instrumentos de Sopro e suas Diferentes Didáticas,11/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 
+TIAGO TADEU RIBEIRO SOUSA,,palestrante,oficina,oficina de Sistemas Digitais,10/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 
+TALITA NEME LIMA SANTOS LOPES,,palestrante,oficina,oficina de Sistemas Digitais,10/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 
+LUCAS SOARES DE CARVALHO,,palestrante,palestra,Desafios da Formação no curso técnico em Meio Ambiente,12/05/2022,09/05/2022,13/05/2022,2,SEMANA DE INTEGRAÇÃO 
+NATAN LUIZ AZEVEDO DA SILVA,,palestrante,palestra,(per)curso rumo ao 1000: estratégias e possibilidades para o êxito na Redação Enem,11/05/2022,09/05/2022,13/05/2022,4,SEMANA DE INTEGRAÇÃO 

@@ -1,0 +1,11 @@
+Template,"Certificamos que {nome}, inscrito(a) no CPF {cpf}, participou  da {tipo_atividade} ""{atividade}"", ocorrida em {data_atividade}, pelo INSTITUTO FEDERAL FLUMINENSE CAMPUS CAMPOS GUARUS, com carga horária de {horas} horas.
+",,,,,,,,
+Nome Completo,CPF (se exigido),"Papel (palestrante, mediador, jurado, etc.)","Tipo (Palestra, Oficina, Minicurso, Concurso, ...)",Nome da Atividade,Data da Atividade,Data de Início do Evento,Data Final do Evento,Carga Horária,Evento
+Ana Beatriz Lima Miro,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Andressa da Silva Costa,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Elianna da Silva Santana,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Gabriel de Souza Barreto,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Jeiziani Barros Figueiredo da Fonseca,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Jonas Miranda Vilamar de Sousa,,Palestrante,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Letícia Barros Figueiredo fa Fonseca,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
+Lívia Pessanha Gonçalves Santana,,Ouvinte,Oficina,Oficina de Produção de Mudas de Flores,06/07/2022,06/07/2022,06/07/2022,2,Oficina de Produção de Mudas de Flores
