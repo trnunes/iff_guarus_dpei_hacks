@@ -5,29 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Scanner</title>
-<script src="https://unpkg.com/html5-qrcode" type="text/javascript">
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"> </script>
+
 
 </head>
 
 <body>
     <div id="reader" style="width: 300px; height: 300px;"></div>
     <script>
-const html5QrCode = new Html5Qrcode(/* element id */ "reader");
-html5QrCode.start(
-  cameraId, 
-  {
-    fps: 10,    // Optional, frame per seconds for qr code scanning
-    qrbox: { width: 250, height: 250 }  // Optional, if you want bounded box UI
-  },
-  (decodedText, decodedResult) => {
-    // do something when code is read
-  },
-  (errorMessage) => {
-    // parse error, ignore it.
-  })
-.catch((err) => {
-  // Start failed, handle it.
-});
         function onScanSuccess(decodedText) {
             alert('Scanned: ' + decodedText);
             // You can redirect to your Glide app with the scanned content as a query parameter
@@ -44,4 +29,3 @@ html5QrCode.start(
 </body>
 
 </html>
-
