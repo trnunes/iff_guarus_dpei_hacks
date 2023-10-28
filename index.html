@@ -37,7 +37,7 @@ navigator.mediaDevices.enumerateDevices()
         });
 
         if (rearCameraId) {
-            startScanner(rearCameraId);
+            startScanner();
         } else {
             console.warn("Rear (back) camera not found. Defaulting to standard camera initialization.");
             startScanner();  // Default initialization without specific camera.
