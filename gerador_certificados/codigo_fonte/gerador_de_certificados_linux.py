@@ -1,6 +1,8 @@
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.common.keys import Keys
@@ -9,6 +11,9 @@ import locale
 import datetime
 import csv
 import getpass
+import os
+import re
+import shutil
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.utf8')
 data = datetime.datetime.now().strftime('%d de %B de %Y')
@@ -81,6 +86,7 @@ for index, row in enumerate(csv_reader):
         
     
     bw.get(clone_url)
+    time.sleep(1)
     setor_wg = bw.find_element("id", "id_setor_dono")
     sel = Select(setor_wg)
     sel.select_by_visible_text("DPEICCG")
@@ -91,7 +97,7 @@ for index, row in enumerate(csv_reader):
     # sel.select_by_visible_text("Restrito")
     # if not n_iter: import pdb; pdb.set_trace()
     
-    doc_title = tipo + " de " + " ; ".join(row)
+    doc_title = tipo + " de " + " " + row[0] + " CONEPE 2023"
     bw.find_element("id", "id_assunto").send_keys(doc_title)
     time.sleep(2)
     bw.find_element("xpath", "//input[@value='Salvar']").click()
@@ -114,10 +120,10 @@ for index, row in enumerate(csv_reader):
     nome = ativ = ""
     for index, h in enumerate(headers):
         value = row[index].strip().upper()
-        if "nome" in h.lower():
+        if  h.lower() in ["nome", "coordenador"]:
             nome = value
         
-        if "atividade" in h.lower():
+        if h.lower() in ["atividade", "trabalho"]:
             ativ = value
         
         txt = txt.replace("{%s}"%h.strip(), value)
@@ -146,18 +152,39 @@ for index, row in enumerate(csv_reader):
     # time.sleep(2)
     sel = Select(bw.find_element("id", "id_1-papel"))
 
-    sel.select_by_visible_text("DIRETOR - CD4 - DPEICCG")
+    sel.select_by_visible_text("DIRETOR(A) - CD4 - DPEICCG")
     bw.find_element("id", "id_1-senha").send_keys(password)
 
 
     bw.find_element("name", "assinardocumento_form").click()
     link_to_pdf = bw.find_element("xpath", "//a[contains(@href,'paisagem')]").get_attribute("href")
-    pdf_response = session.get(link_to_pdf)
-    with open("./certificados_e_cartas_geradas/%s_%s.pdf"%(nome, ativ), 'wb') as f:
-        f.write(pdf_response.content)
+    bw.get(link_to_pdf)
+    wait = WebDriverWait(bw, 60)  # waits for 60 seconds
+
+    continue_button = wait.until(EC.visibility_of_element_located((By.XPATH, "//a[text()='Continuar']")))
+    download_dir = "/home/thiago/Downloads"
+    destination_dir = "./certificados_e_cartas_geradas"
+
+    # List files matching the pattern "Documento(x)"
+    time.sleep(4)
+    matching_files = [f for f in os.listdir(download_dir) if re.match(r'Documento\(\d+\)', f)]
+
+    # Sort them based on the sequence number "x" to get the latest one
+    matching_files.sort(key=lambda f: int(re.search(r'\((\d+)\)', f).group(1)))
+
+    # Take the latest file
+    latest_file = matching_files[-1]
+
+    # Move the latest file to the desired directory
+    source_path = os.path.join(download_dir, latest_file)
+    destination_path = os.path.join(destination_dir, "%s_%s.pdf" % (nome, ativ.replace("\\", "_")))
+    
+    shutil.move(source_path, destination_path)
+
 
     # bw.find_element("id", "download").click()
-    
+    bw.find_element("xpath", "//a[text()='Continuar']").click()
+    # import pdb; pdb.set_trace()
     time.sleep(2)
     
     # import pdb; pdb.set_trace()
