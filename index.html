@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"> </script>
+
+
+</head>
+
+<body>
+    <h3>Presença Via QRCode</h3>
+
+    <div id="reader" style="width: 300px; height: 300px;"></div>
+    <script>
+        
+        function onScanSuccess(decodedText) {
+            alert('Scanned: ' + decodedText);
+            // You can redirect to your Glide app with the scanned content as a query parameter
+            // window.location.href = 'https://your-app.glideapp.io?scanned_data=' + decodedText;
+        }
+
+        function onScanError(errorMessage) {
+            console.error(errorMessage);
+        }
+
+navigator.mediaDevices.enumerateDevices()
+    .then(function (devices) {
+        var rearCameraId = null;
+        
+        devices.forEach(function (device) {
+            if (device.kind === 'videoinput' && device.label.toLowerCase().includes('back')) {
+                rearCameraId = device.deviceId;
+            }
+        });
+
+        if (rearCameraId) {
+            startScanner();
+        } else {
+            console.warn("Rear (back) camera not found. Defaulting to standard camera initialization.");
+            startScanner();  // Default initialization without specific camera.
+        }
+    })
+    .catch(function (err) {
+        console.error("Error enumerating devices:", err);
+        startScanner();  // Default initialization without specific camera in case of errors.
+    });
+
+function startScanner(cameraId) {
+    var config = {
+        fps: 10,
+        qrbox: { width: 250, height: 250 }
+    };
+    
+    if (cameraId) {
+        config.cameraId = cameraId;
+    }
+
+    var html5QrcodeScanner = new Html5QrcodeScanner("reader", config);
+    html5QrcodeScanner.render(onScanSuccess, onScanError);
+}
+    </script>
+</body>
+
+</html>
